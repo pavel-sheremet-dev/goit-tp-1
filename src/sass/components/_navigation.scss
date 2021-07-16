@@ -1,0 +1,23 @@
+.navigation__list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $secondary-text-color;
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.navigation__link_accent {
+  color: $main-brand-color;
+}
+
+.navigation__link {
+  &:hover,
+  &:focus {
+    color: $main-brand-color;
+  }
+}
