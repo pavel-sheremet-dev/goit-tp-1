@@ -1,41 +1,56 @@
 <!--Products section-->
-<section>
-  <div class="container">
-    <div>
+<section class="products">
+  <div class="products__container">
+    <div class="products-header">
       <!-- TODO: style as flex column reverse -->
-      <h2><span>Pro</span><span>ducts</span></h2>
-      <p>100% natural</p>
+      <h2 class="products-header__header">
+        <span class="products-header__syllable">Pro</span
+        ><span class="products-header__syllable">ducts</span>
+      </h2>
+      <p class="products-header__label">100% natural</p>
     </div>
-    <ul>
-      <li>
-        <img src="./images/delete-me-ice-cream-cone.png" alt="Ice-cream cone" />
-        <h3 class="caption"></h3>
+    <ul class="products__cards">
+      <li class="product">
+        <img
+          class="product__image"
+          src="./images/delete-me-ice-cream-cone.png"
+          alt="Ice-cream cone"
+        />
+        <h3 class="product__caption"></h3>
         <!--Add pseudo-element :after-->
-        <p>
+        <p class="product__discription">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button">-></button>
+        <button type="button" class="product__show-more-button">-></button>
       </li>
       <li>
-        <img src="./images/delete-me-ice-coffee.png" alt="Ice-cream cone" />
-        <h3 class="caption"></h3>
+        <img
+          class="product__image"
+          src="./images/delete-me-ice-coffee.png"
+          alt="Ice coffee glass"
+        />
+        <h3 class="product__caption"></h3>
         <!--Add pseudo-element :after-->
-        <p>
+        <p class="product__discription">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button">-></button>
+        <button type="button" class="product__show-more-button">-></button>
       </li>
       <li>
-        <img src="./images/delete-me-milkshake.png" alt="Ice-cream cone" />
-        <h3 class="caption"></h3>
+        <img
+          class="product__image"
+          src="./images/delete-me-milkshake.png"
+          alt="Milkshake glass"
+        />
+        <h3 class="product__caption"></h3>
         <!--Add pseudo-element :after-->
-        <p>
+        <p class="product__discription">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button">-></button>
+        <button type="button" class="product__show-more-button">-></button>
       </li>
     </ul>
   </div>
