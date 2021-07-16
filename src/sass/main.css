@@ -1,0 +1,78 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img,
+a {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: "DM Sans", arial, sans-serif;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1090px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
