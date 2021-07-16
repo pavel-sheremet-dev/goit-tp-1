@@ -89,4 +89,13 @@
   .mobile-menu__close-btn {
     display: none;
   }
+
+  .mobile-menu__container {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .mobile-menu__bodal-btn {
+    margin-left: 110px;
+  }
 }
