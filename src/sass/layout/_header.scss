@@ -28,7 +28,7 @@
 
 @media screen and (min-width: $tablet) {
   .header__modal-btn {
-    display: block;
+    display: flex;
   }
 
   .header__open-menu-btn {
@@ -38,5 +38,13 @@
 
   .header__container {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  // .header__container {
+  // }
+  .header__modal-btn {
+    display: none;
   }
 }

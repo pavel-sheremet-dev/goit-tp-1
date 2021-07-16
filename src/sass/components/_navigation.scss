@@ -5,12 +5,6 @@
   color: $secondary-text-color;
 }
 
-.navigation__item {
-  &:not(:last-child) {
-    margin-bottom: 22px;
-  }
-}
-
 .navigation__link_accent {
   color: $main-brand-color;
 }
@@ -19,5 +13,26 @@
   &:hover,
   &:focus {
     color: $main-brand-color;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navigation__item {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navigation__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
   }
 }
