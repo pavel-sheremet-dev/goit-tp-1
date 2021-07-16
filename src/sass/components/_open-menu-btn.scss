@@ -1,0 +1,10 @@
+.open-menu-btn {
+  padding: 0;
+  border: none;
+}
+
+@media screen and (min-width: $desktop) {
+  .open-menu-btn {
+    display: none;
+  }
+}
