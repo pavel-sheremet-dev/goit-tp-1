@@ -12,5 +12,14 @@
 <symbol id="icon-facebook" viewBox="0 0 10 20">
 <path d="M8.84 9.982h-2.521v9.291h-3.82v-9.291h-1.817v-3.265h1.817v-2.113c0-1.511 0.714-3.877 3.854-3.877l2.829 0.012v3.169h-2.053c-0.337 0-0.81 0.169-0.81 0.89v1.922h2.855l-0.334 3.262z"></path>
 </symbol>
+<symbol id="icon-ellipse-white" viewBox="0 0 20 20">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M20 10c0 5.523-4.477 10-10 10s-10-4.477-10-10c0-5.523 4.477-10 10-10s10 4.477 10 10z"></path>
+</symbol>
+<symbol id="icon-ellipse-pink" viewBox="0 0 20 20">
+<path fill="#ffa5ba" style="fill: var(--color3, #ffa5ba)" d="M20 10c0 5.523-4.477 10-10 10s-10-4.477-10-10c0-5.523 4.477-10 10-10s10 4.477 10 10z"></path>
+</symbol>
+<symbol id="icon-button-arrow" viewBox="0 0 16 20">
+<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.233 2l8.855 8-8.855 8"></path>
+</symbol>
 </defs>
 </svg>
