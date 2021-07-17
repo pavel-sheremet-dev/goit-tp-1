@@ -2,29 +2,38 @@
   background-color: $light-background;
   display: block;
   width: 100%;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-right: -60px;
-    &:last-child {
-      margin-right: -76px;
-    }
-  }
 }
 
 .advantages__item {
-  margin-right: 70px;
-  margin-left: 20px;
-  @media screen and (min-width: $tablet) {
-    margin-right: 60px;
-    margin-left: 0;
-    &:last-child {
-      margin-right: 76px;
-    }
-  }
+  max-width: 280px;
 }
 
 .advantages__item:not(:last-child) {
   margin-bottom: 38px;
+}
+
+@media screen and (min-width: $tablet) {
+  .advantages {
+    display: flex;
+  }
+  .advantages__item {
+    min-width: 180px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .advantages__item:last-child {
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .advantages__item {
+    min-width: 330px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages__item--icon1::before {
@@ -34,9 +43,6 @@
   height: 50px;
   background-image: url('../images/advantages/bucket.png');
   margin-bottom: 16px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 36px;
-  }
 }
 
 .advantages__item--icon2::before {
@@ -46,9 +52,6 @@
   height: 50px;
   background-image: url('../images/advantages/fruits.png');
   margin-bottom: 16px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 36px;
-  }
 }
 
 .advantages__item--icon3::before {
@@ -58,8 +61,21 @@
   height: 50px;
   background-image: url('../images/advantages/ice-cream.png');
   margin-bottom: 16px;
-  @media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: $tablet) {
+  .advantages__item--icon1::before,
+  .advantages__item--icon2::before,
+  .advantages__item--icon3::before {
     margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .advantages__item--icon1::before,
+  .advantages__item--icon2::before,
+  .advantages__item--icon3::before {
+    margin-bottom: 40px;
   }
 }
 
@@ -71,7 +87,15 @@
 
 .advantages__text {
   font-family: $main-font;
-  @include _fw_fs_lh_ls($fw: 700, $fs: 16, $lh: 28, $ls: 0.02);
   color: $main-text-color;
   margin-top: 15px;
+  @include _fw_fs_lh_ls($fw: 700, $fs: 12, $lh: 20, $ls: 0.02);
+
+  @media screen and (min-width: $tablet) {
+    @include _fw_fs_lh_ls($fw: 700, $fs: 14, $lh: 24, $ls: 0.02);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include _fw_fs_lh_ls($fw: 700, $fs: 16, $lh: 28, $ls: 0.02);
+  }
 }
