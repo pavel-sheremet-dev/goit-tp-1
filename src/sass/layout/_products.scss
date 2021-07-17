@@ -21,6 +21,7 @@
 }
 .product {
   width: 100%;
+  position: relative;
   margin-top: calc((252 * (100vw - 70px) / 249) * (113 / 249) + 31px);
   margin-bottom: 17px;
   padding: 0 40px 40px;
