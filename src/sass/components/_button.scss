@@ -10,12 +10,27 @@
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
-  color: $main-brand-color;
+
   border: none;
   border-radius: 22px;
-  background-color: $secondary-text-color;
+
   cursor: pointer;
   transition: color 200ms linear, background-color 250ms linear;
+}
+
+.btn_theme_white {
+  color: $main-brand-color;
+  background-color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $second-accent-color;
+  }
+}
+
+.btn_theme_cherry {
+  color: $secondary-text-color;
+  background-color: $main-brand-color;
 
   &:hover,
   &:focus {
@@ -26,11 +41,12 @@
 
 .btn__icon {
   margin-left: 14px;
-  stroke: $main-brand-color;
-  transition: stroke 200ms linear;
+}
 
-  .btn:hover &,
-  .btn:focus & {
-    stroke: $secondary-text-color;
-  }
+.btn__icon_theme_white {
+  stroke: $main-brand-color;
+}
+
+.btn__icon_theme_cherry {
+  stroke: $secondary-text-color;
 }
