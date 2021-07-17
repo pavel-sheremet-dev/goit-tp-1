@@ -6,23 +6,21 @@
 
 .footer-logo{
     font-family: $secondary-font;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
     color: $secondary-brand-color;
+    max-width: 232px;
 }
 
 .footer-logo--accent{
     font-family: $secondary-font;
-    font-style: normal;
-    font-weight: normal;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $main-brand-color;
+    max-width: 200px;
 }
 
 .social-media{
@@ -32,14 +30,24 @@
     margin-bottom: 46px;
 }
 .social-media__item{
-    width: 32px;
-    height: 32px;
     background-color: $social-icons-fill;
     border-radius: 50%;
-    padding: 7px 7px;
     &:not(:last-child){
     margin-right: 28px;}
+    &:hover,
+    &:focus{
+        background-color: $main-brand-color;
+
+    }
 }
+.social-media__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
 .social-media__icon{
     fill:$secondary-text-color;
 }
@@ -47,7 +55,7 @@
     color: $main-text-color;
 }
 .footer-phone{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
     line-height: 1.8;
     text-align: right;
@@ -56,7 +64,8 @@
 }
 
 .footer-copyright{
-    font-weight: bold;
+    display: block;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
@@ -66,10 +75,11 @@
         content: '';
         display: block;
         position: relative;
-        width: 100%;
+        width: calc(100% + 40px);
         height: 1px;
         background:#E1E1E1;
         top: -22px;
+        left: -20px;
     }
 
 }
