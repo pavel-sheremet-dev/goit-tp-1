@@ -1,6 +1,7 @@
 .footer{
     background-color: $light-background;
     margin-top: 113px;
+    position:relative;
 }
 
 
@@ -63,23 +64,36 @@
     margin-bottom: 65px;
 }
 
+.footer-copyright--first{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 150px;
+    text-align: center;
+    margin:0 auto;
+    color: $description-text-color;
+}
+
 .footer-copyright{
     display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
+    max-width: 150px;
     text-align: center;
+    margin:0 auto;
     color: $description-text-color;
     padding-bottom: 25px;
     &::before{
         content: '';
         display: block;
-        position: relative;
-        width: calc(100% + 40px);
+        position: absolute;
+        width:100vw;
         height: 1px;
         background:#E1E1E1;
-        top: -22px;
-        left: -20px;
+        left: 0;
+        bottom: 89px;
     }
 
 }
