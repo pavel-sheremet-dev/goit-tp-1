@@ -19,7 +19,7 @@
 <path fill="#ffa5ba" style="fill: var(--color3, #ffa5ba)" d="M20 10c0 5.523-4.477 10-10 10s-10-4.477-10-10c0-5.523 4.477-10 10-10s10 4.477 10 10z"></path>
 </symbol>
 <symbol id="icon-button-arrow" viewBox="0 0 16 20">
-<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.233 2l8.855 8-8.855 8"></path>
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.233 2l8.855 8-8.855 8"></path>
 </symbol>
 </defs>
 </svg>

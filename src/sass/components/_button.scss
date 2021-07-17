@@ -1,18 +1,16 @@
-.modal-btn {
+.btn {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: space-around;
 
   padding-left: 49px;
   padding-right: 49px;
   padding-top: 11.5px;
   padding-bottom: 11.5px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
   color: $main-brand-color;
-
   border: none;
   border-radius: 22px;
   background-color: $secondary-text-color;
@@ -26,13 +24,13 @@
   }
 }
 
-.modal-btn__icon {
-  background-color: black;
-  margin-left: 28px;
-}
+.btn__icon {
+  margin-left: 14px;
+  stroke: $main-brand-color;
+  transition: stroke 200ms linear;
 
-// @media screen and (min-width: $desktop) {
-//   .modal-btn {
-//     display: none;
-//   }
-// }
+  .btn:hover &,
+  .btn:focus & {
+    stroke: $secondary-text-color;
+  }
+}

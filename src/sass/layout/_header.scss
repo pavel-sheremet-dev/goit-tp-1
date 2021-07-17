@@ -8,7 +8,7 @@
   margin-right: 10px;
 }
 
-.header__modal-btn {
+.header__btn {
   display: none;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .header__modal-btn {
+  .header__btn {
     display: flex;
   }
 
@@ -38,7 +38,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .header__modal-btn {
+  .header__btn {
     display: none;
   }
 
