@@ -1,0 +1,74 @@
+.products {
+  text-align: center;
+  padding-top: 121px;
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-family: $secondary-font;
+    color: $secondary-brand-color;
+    text-transform: uppercase;
+    @include _fs_lh_ls(18, 20.6);
+  }
+  &__header {
+    font-family: $secondary-font;
+    color: $main-brand-color;
+    text-transform: uppercase;
+    @include _fs_lh_ls(34, 39, 0.04);
+  }
+  &__cards {
+    margin-bottom: 98px;
+  }
+}
+.product {
+  width: 100%;
+  margin-top: calc((252 * (100vw - 70px) / 249) * (113 / 249) + 31px);
+  margin-bottom: 17px;
+  padding: 0 40px 40px;
+  background-color: $accent-background;
+  border-radius: 24px;
+
+  &--ice-coffee {
+    background-color: $first-cards-fill;
+  }
+  &--milkshake {
+    background-color: $second-cards-fill;
+  }
+
+  &__image {
+    width: calc(100vw - 70px);
+    margin: 0 0 22px -25px;
+    // пропорция высчитана, исходя из соотношения сторон изображения, его отступов от края экрана, родителя, а также коэффициента вертикального смещения
+    transform: translateY(calc((-252 * (100vw - 70px) / 249) * (113 / 249)));
+    position: absolute;
+  }
+  &__caption {
+    margin-bottom: 36px;
+    padding-top: calc(
+      (252 * (100vw - 70px) / 249) * ((252 - 113) / 249) + 22px
+    );
+    font-family: $secondary-font;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    @include _fw_fs_lh_ls(400, 20, 22.9, 0.04);
+    &::after {
+      content: '...';
+      display: block;
+      margin-top: 16px;
+      font-size: 27px;
+      letter-spacing: 0.08em;
+    }
+  }
+  &__description {
+    margin-bottom: 30px;
+    font-family: $main-font;
+    color: $secondary-text-color;
+    @include _fw_fs_lh_ls(700, 14, 22, 0.04);
+  }
+  &__show-more-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: $secondary-text-color;
+  }
+}
