@@ -1,13 +1,17 @@
 <header class="header" id="home">
   <div class="container header__container">
     <a href="./index.html" class="logo header__logo">
-      <img
-        class="logo__img"
-        src="./images/logo.png"
-        alt="logotype"
-        width="199"
-        height="50"
-      />
+      <picture class="pictureset">
+        <source
+          srcset="./images/header/logo.webp 1x, ./images/header/logo@2x.webp 2x"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/header/logo.png 1x, ./images/header/logo@2x.png 2x"
+          type="image/png"
+        />
+        <img class="logo__img" src="#" alt="logotype" />
+      </picture>
     </a>
     <button
       class="open-menu-btn header__open-menu-btn"

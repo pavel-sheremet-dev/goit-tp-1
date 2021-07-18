@@ -9,16 +9,22 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
-  padding-left: 20px;
   text-align: center;
+}
+
+.callback::after {
+  content: '...';
+  @include _fs_lh_ls(20, 20, 0.2);
+  color: $light-background;
+  display: block;
 }
 
 .callback__title {
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 12px;
-  @include _fs_lh_ls(14, 20, 0);
+  margin-bottom: 15px;
+  font-weight: 700;
+  @include _fs_lh_ls(14, 26, 0);
   color: $light-background;
 }
 
