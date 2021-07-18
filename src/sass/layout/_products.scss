@@ -66,9 +66,11 @@
     @include _fw_fs_lh_ls(700, 14, 22, 0.04);
   }
 }
+
 @media screen and (min-width: $mobile) {
   .product {
     margin-top: 219px;
+
     &__image {
       width: 410px;
       transform: translateY(-188px);
@@ -78,6 +80,7 @@
     }
   }
 }
+
 @media screen and (min-width: $tablet) {
   .products {
     &__subtitle {
