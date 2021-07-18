@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
   <div class="container header__container">
     <a href="./index.html" class="logo header__logo">
       <img
@@ -17,11 +17,18 @@
       aria-expanded="false"
       aria-controls="mobile-menu-container"
     >
-      <svg class="open-menu-btn__icon" width="20" height="12">
-        <use class="open-menu-btn__icon_open" href="#"></use>
+      <svg class="open-menu-btn__icon" width="20" height="13">
+        <use
+          class="open-menu-btn__icon_open"
+          href="./images/svg/icons.svg#icon-burger"
+        ></use>
       </svg>
     </button>
-    <button class="btn btn_theme_white header__btn" type="button">
+    <button
+      class="btn btn_theme_white header__btn"
+      type="button"
+      data-modal-open
+    >
       Buy now
       <svg class="btn__icon btn__icon_theme_white" width="8" height="10">
         <use href="./images/svg/icons.svg#icon-button-arrow"></use>
@@ -36,10 +43,14 @@
         <div class="mobile-menu__container">
           <button class="mobile-menu__close-btn" type="button" data-menu-close>
             <svg class="mobile-menu__close-icon" width="14" height="14">
-              <use href="#"></use>
+              <use href="./images/svg/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <button class="btn btn_theme_white mobile-menu__btn" type="button">
+          <button
+            class="btn btn_theme_white mobile-menu__btn"
+            type="button"
+            menu-data-modal-open
+          >
             Buy now
             <svg class="btn__icon btn__icon_theme_white" width="8" height="10">
               <use href="./images/svg/icons.svg#icon-button-arrow"></use>
@@ -49,7 +60,7 @@
             <ul class="navigation__list list">
               <li class="navigation__item">
                 <a
-                  href="#Home"
+                  href="#home"
                   class="navigation__link link navigation__link_accent"
                   data-enable-accent
                   >Home</a
@@ -57,7 +68,7 @@
               </li>
               <li class="navigation__item">
                 <a
-                  href="#About"
+                  href="#about"
                   class="navigation__link link"
                   data-enable-accent
                   >About us</a
@@ -65,7 +76,7 @@
               </li>
               <li class="navigation__item">
                 <a
-                  href="#how-it-made"
+                  href="#about"
                   class="navigation__link link"
                   data-enable-accent
                   >How it’s made?</a
@@ -81,7 +92,7 @@
               </li>
               <li class="navigation__item">
                 <a
-                  href="#Contact"
+                  href="#contact"
                   class="navigation__link link"
                   data-enable-accent
                   >Contact</a

@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 4px;
+  background-image: repeating-radial-gradient(
+    circle,
+    $main-brand-color,
+    $main-brand-color 30px,
+    $first-accent-color 30px,
+    $first-accent-color 60px
+  );
+  transform: translateY(0);
+  transition: transform 250ms linear;
+  overflow: auto;
+}
+
+.is-hidden {
+  .modal {
+    transform: translateY(100%);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 23px;
+  right: 50px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  stroke: $second-accent-color;
+  cursor: pointer;
+  line-height: 0;
+}
