@@ -6,24 +6,130 @@
 
     <ul class="products__cards list">
       <li class="product product--ice-cone">
-        <img
-          class="product__image"
-          src="./images/delete-me-ice-cream-cone.png"
-          alt="Ice-cream cone"
-        />
+        <picture class="pictureset">
+          <source
+            srcset="
+              ./images/products/cone-desktop.webp    1x,
+              ./images/products/cone-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/cone-desktop.png    1x,
+              ./images/products/cone-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/cone-tablet.webp    1x,
+              ./images/products/cone-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/cone-tablet.png    1x,
+              ./images/products/cone-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/cone-mob.webp    1x,
+              ./images/products/cone-mob@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/cone-mob.png    1x,
+              ./images/products/cone-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="product__image"
+            src="./images/products/cone-desktop.png"
+            alt="Ice-cream cone"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="product__caption">ice cream</h3>
         <p class="product__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button type="button" class="product__show-more-button">-></button>
+        <button type="button" class="product__show-more-button">
+          <svg width="11" height="10">
+            <use href="./images/svg/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </li>
       <li class="product product--ice-coffee">
-        <img
-          class="product__image"
-          src="./images/delete-me-ice-coffee.png"
-          alt="Ice coffee glass"
-        />
+        <picture class="pictureset">
+          <source
+            srcset="
+              ./images/products/ice-coffee-desktop.webp    1x,
+              ./images/products/ice-coffee-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffee-desktop.png    1x,
+              ./images/products/ice-coffee-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffee-tablet.webp    1x,
+              ./images/products/ice-coffee-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffee-tablet.png    1x,
+              ./images/products/ice-coffee-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffee-mob.webp    1x,
+              ./images/products/ice-coffee-mob@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/ice-coffee-mob.png    1x,
+              ./images/products/ice-coffee-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="product__image"
+            src="./images/products/ice-coffee-desktop.png"
+            alt="Ice coffee glass"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="product__caption">ice coffee</h3>
         <p class="product__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,11 +138,62 @@
         <button type="button" class="product__show-more-button">-></button>
       </li>
       <li class="product product--milkshake">
-        <img
-          class="product__image"
-          src="./images/delete-me-milkshake.png"
-          alt="Milkshake glass"
-        />
+        <picture class="pictureset">
+          <source
+            srcset="
+              ./images/products/milkshake-desktop.webp    1x,
+              ./images/products/milkshake-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/milkshake-desktop.png    1x,
+              ./images/products/milkshake-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/milkshake-tablet.webp    1x,
+              ./images/products/milkshake-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/milkshake-tablet.png    1x,
+              ./images/products/milkshake-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/products/milkshake-mob.webp    1x,
+              ./images/products/milkshake-mob@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/milkshake-mob.png    1x,
+              ./images/products/milkshake-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="product__image"
+            src="./images/products/milkshake-desktop.png"
+            alt="Milkshake glass"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="product__caption">milkshakes</h3>
         <p class="product__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
