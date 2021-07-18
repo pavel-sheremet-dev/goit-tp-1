@@ -112,17 +112,16 @@
     }
     
     .footer-copyright{
-        max-width:276px;
-        padding-bottom:  18px ;
+        max-width: 276px;
+        padding-bottom: 18px;
         &::before{
-            bottom:73px;
+            bottom: 73px;
         }
-    }
-    .footer-copyright--first{
+        &--first{
         display:inline-block;
     }
 
-}
+}}
 
 @media screen and (min-width: $desktop){
     .footer-logo,
@@ -130,16 +129,15 @@
         max-width: 474px;
     }
     .footer-phone{
-        margin-bottom:107px;
+        margin-bottom: 107px;
     }
     .footer-copyright{
-        max-width:276px;
-        padding-bottom:  10px ;
+        max-width: 276px;
+        padding-bottom: 10px;
         &::before{
-            bottom:45px;
+            bottom: 45px;
         }
-    }
-    .footer-copyright--first{
+        &--first{
         display:inline-block;
-    }
-}
+        }
+}}
