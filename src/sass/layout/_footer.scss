@@ -12,6 +12,7 @@
     text-transform: uppercase;
     color: $secondary-brand-color;
     max-width: 232px;
+    margin-bottom: 15px;
 }
 
 .footer-logo--accent{
@@ -96,4 +97,49 @@
         bottom: 89px;
     }
 
+}
+
+@media screen and (min-width: $tablet){
+    .footer-contacts-wrapper{
+    position: relative;
+    }
+
+    .footer-wrapper{
+        position: absolute;
+    }
+    .footer-phone{
+        margin-bottom: 204px;
+    }
+    
+    .footer-copyright{
+        max-width:276px;
+        padding-bottom:  18px ;
+        &::before{
+            bottom:73px;
+        }
+    }
+    .footer-copyright--first{
+        display:inline-block;
+    }
+
+}
+
+@media screen and (min-width: $desktop){
+    .footer-logo,
+    .footer-logo--accent{
+        max-width: 474px;
+    }
+    .footer-phone{
+        margin-bottom:107px;
+    }
+    .footer-copyright{
+        max-width:276px;
+        padding-bottom:  10px ;
+        &::before{
+            bottom:45px;
+        }
+    }
+    .footer-copyright--first{
+        display:inline-block;
+    }
 }
