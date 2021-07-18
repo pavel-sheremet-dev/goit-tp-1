@@ -1,0 +1,197 @@
+.about {
+  background-color: $light-background;
+  padding-top: 125px;
+  padding-bottom: 20px;
+  position: relative;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/about/milk-drops-mob.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 87%;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk-drops-mob@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 125px;
+    padding-bottom: 33px;
+    background-image: url('../images/about/milk-drops-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80%;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk-drops-desktop@2x.png');
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+
+    font-family: $secondary-font;
+    color: $secondary-brand-color;
+    font-size: 18px;
+    line-height: 1.167;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      font-size: 26px;
+      line-height: 1.154;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 1.133;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    font-family: $secondary-font;
+    color: $main-brand-color;
+    font-size: 34px;
+    line-height: 1.147;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 48px;
+      line-height: 1.146;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 55px;
+      font-size: 58px;
+      line-height: 1.138;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+}
+.about__image {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  height: 279px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    height: 339px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 516px;
+    height: 516px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.about__text-container {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 46px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 50px;
+    margin-left: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 106px;
+    margin-left: 74px;
+  }
+}
+
+.about__main-text {
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.about__secondary-word {
+  display: block;
+
+  @media screen and (min-width: 480px) {
+    display: inline-block;
+  }
+}
+
+.about__main-text,
+.about__secondary-text,
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+}
+
+.about__secondary-text {
+  margin-top: 37px;
+}
+
+.about__secondary-text,
+.about__text {
+  color: $description-text-color;
+}
+
+.about__text {
+  margin-top: 20px;
+}
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  margin-top: 26px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+
+  background-color: $secondary-text-color;
+  color: $main-brand-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+}
+
+.about__icon {
+  margin-left: 19px;
+}

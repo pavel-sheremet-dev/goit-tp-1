@@ -1,0 +1,154 @@
+@media screen and (max-width: 767px) {
+  .hero__additional-content {
+    display: none;
+  }
+}
+@media screen and (min-width: 280px) {
+  .hero {
+    position: relative;
+    padding-top: 193px;
+    padding-bottom: 160px;
+    background-color: $accent-background;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 75px;
+      right: -62px;
+      width: 346px;
+      height: 344px;
+      border-radius: 50%;
+      background: $secondary-brand-color;
+    }
+  }
+  .hero__title {
+    position: relative;
+    z-index: 10;
+    width: 75%;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 19px;
+  }
+  .hero__title--accent {
+    font-size: 48px;
+    line-height: 0.958;
+    color: $main-brand-color;
+  }
+  .hero__cone {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 32px;
+  }
+  .hero__btn-list {
+    display: flex;
+  }
+  .hero__btn {
+    position: relative;
+    z-index: 10;
+    padding: 9px 15px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 94px;
+    padding-bottom: 173px;
+
+    &::after {
+      right: 137px;
+      bottom: 46px;
+      width: 324px;
+      height: 322px;
+    }
+  }
+  .hero__title {
+    width: 25%;
+    font-size: 22px;
+    line-height: 1.136;
+    margin-bottom: 20px;
+  }
+  .hero__cone {
+    right: 247px;
+  }
+  .hero__girl {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 34px;
+  }
+  .hero__milk {
+    position: absolute;
+    left: 34px;
+    bottom: 28px;
+  }
+  .hero__list {
+    position: absolute;
+    right: 44px;
+    top: 94px;
+  }
+  .hero__list-item {
+    position: relative;
+    z-index: 1;
+    font-family: $secondary-font;
+    font-size: 28px;
+    line-height: 1.143;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: $main-brand-color;
+
+    &:first-child {
+      margin-bottom: 13px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      right: -8px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $secondary-text-color;
+    }
+  }
+  .hero__list-text {
+    display: block;
+    font-family: $main-font;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $secondary-text-color;
+  }
+  .hero__product-descr {
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+  }
+  .hero__short-product-descr {
+    width: 114px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $secondary-text-color;
+    margin-bottom: 7px;
+  }
+  .read-more-btn {
+    border-color: transparent;
+    background-color: transparent;
+    padding: 0;
+  }
+}
