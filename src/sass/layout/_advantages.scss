@@ -2,8 +2,16 @@
   background-color: $light-background;
   display: block;
   width: 100%;
-  padding-bottom: 84px;
   padding-top: 20px;
+}
+
+.advantages__container {
+  padding-bottom: 133px;
+}
+@media screen and (min-width: $tablet) {
+  .advantages__container {
+    padding-bottom: 245px;
+  }
 }
 
 .advantages__item {
@@ -18,7 +26,6 @@
   .advantages {
     display: flex;
     padding-top: 33px;
-    padding-bottom: 140px;
   }
   .advantages__item {
     min-width: 180px;
