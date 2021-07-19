@@ -19,21 +19,14 @@
 }
 
 .gallery {
-  padding-bottom: 45px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: $tablet) {
   .gallery {
     padding-bottom: 60px;
   }
-  @media screen and (min-width: $desktop) {
-    .gallery {
-      padding-bottom: 70px;
-    }
-  }
-}
 
-@media screen and (min-width: $tablet) {
   .gallery__container {
     max-width: 786px;
     min-height: 265px;
@@ -61,8 +54,4 @@
       background-image: url('../images/gallery/opacity/gallery-desktop@2x.png');
     }
   }
-}
-
-.hidden {
-  display: none;
 }
