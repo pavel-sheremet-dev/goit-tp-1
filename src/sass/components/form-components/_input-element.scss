@@ -3,7 +3,7 @@
   margin-left: 16px;
   margin-bottom: 10px;
   text-align: left;
-  color: $secondary-text-color;
+  color: $first-cards-fill;
 }
 
 .input-element__entry-field,
@@ -54,7 +54,7 @@
 
   &::placeholder {
     @include _fs_lh_ls(14, 16, 0);
-    color: $accent-background;
+    color: $placeholder-color;
   }
 }
 
@@ -70,7 +70,7 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  fill: $accent-background;
+  fill: $main-brand-color;
   transition: fill 250ms linear;
 
   .input-element__entry-field:focus + & {
