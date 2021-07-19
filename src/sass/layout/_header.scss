@@ -32,11 +32,11 @@
     padding-top: 37px;
     padding-bottom: 6px;
   }
-}
 
-@media screen and (min-width: $tablet) {
   .header__btn {
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .header__open-menu-btn {

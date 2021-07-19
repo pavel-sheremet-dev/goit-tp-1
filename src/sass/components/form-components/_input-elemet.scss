@@ -19,7 +19,7 @@
 .input-element__entry-field {
   height: 40px;
   padding-left: 42px;
-  transition: background-color 250 linear;
+  transition: background-color 250ms linear;
 
   &:focus {
     background-color: $secondary-text-color;
