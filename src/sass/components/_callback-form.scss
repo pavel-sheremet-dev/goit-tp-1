@@ -1,0 +1,43 @@
+.callback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(-50%, -50%);
+  max-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.callback::after {
+  content: '...';
+  @include _fs_lh_ls(20, 20, 0.2);
+  color: $light-background;
+  display: block;
+}
+
+.callback__title {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-weight: 700;
+  @include _fs_lh_ls(14, 26, 0);
+  color: $light-background;
+}
+
+@media screen and (min-width: $mobile) {
+  .callback {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .callback {
+    width: 600px;
+  }
+}

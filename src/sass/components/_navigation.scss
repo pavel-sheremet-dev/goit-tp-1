@@ -1,0 +1,43 @@
+.navigation__list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $secondary-text-color;
+}
+
+.is-accent {
+  color: $main-brand-color;
+}
+
+.navigation__link {
+  &:hover,
+  &:focus {
+    color: $main-brand-color;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navigation__item {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .navigation__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation__item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  .navigation__link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

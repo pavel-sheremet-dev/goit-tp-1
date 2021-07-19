@@ -1,0 +1,112 @@
+.advantages {
+  background-color: $light-background;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.advantages__container {
+  padding-bottom: 133px;
+}
+@media screen and (min-width: $tablet) {
+  .advantages__container {
+    padding-bottom: 245px;
+  }
+}
+
+.advantages__item {
+  max-width: 280px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: $tablet) {
+  .advantages {
+    display: flex;
+    padding-top: 33px;
+  }
+  .advantages__item {
+    min-width: 180px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .advantages__item:last-child {
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .advantages__item {
+    min-width: 330px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantages__item--icon1::before {
+  content: '';
+  display: inline-block;
+  width: 33px;
+  height: 50px;
+  background-image: url('../images/advantages/bucket.png');
+  margin-bottom: 16px;
+}
+
+.advantages__item--icon2::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/advantages/fruits.png');
+  margin-bottom: 16px;
+}
+
+.advantages__item--icon3::before {
+  content: '';
+  display: inline-block;
+  width: 44px;
+  height: 50px;
+  background-image: url('../images/advantages/ice-cream.png');
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: $tablet) {
+  .advantages__item--icon1::before,
+  .advantages__item--icon2::before,
+  .advantages__item--icon3::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .advantages__item--icon1::before,
+  .advantages__item--icon2::before,
+  .advantages__item--icon3::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__count {
+  font-family: $secondary-font;
+  @include _fw_fs_lh_ls($fw: 400, $fs: 58, $lh: 66, $ls: 0.04);
+  color: $main-brand-color;
+}
+
+.advantages__text {
+  font-family: $main-font;
+  color: $main-text-color;
+  margin-top: 15px;
+  @include _fw_fs_lh_ls($fw: 700, $fs: 12, $lh: 20, $ls: 0.02);
+
+  @media screen and (min-width: $tablet) {
+    @include _fw_fs_lh_ls($fw: 700, $fs: 14, $lh: 24, $ls: 0.02);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include _fw_fs_lh_ls($fw: 700, $fs: 16, $lh: 28, $ls: 0.02);
+  }
+}

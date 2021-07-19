@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 10px;
+
+  animation-name: logo-animation;
+  animation-timing-function: cubic-bezier(0.37, 0.6, 0.66, 0.82);
+  animation-duration: 1200ms;
+  animation-delay: 500ms;
+}
+
+.header__btn {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .header__container {
+    padding-top: 37px;
+    padding-bottom: 6px;
+  }
+
+  .header__btn {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header__open-menu-btn {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .header__btn {
+    display: none;
+  }
+
+  .header__logo {
+    margin-left: -70px;
+  }
+}
