@@ -11,12 +11,14 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 280px) {
   .hero {
     padding-top: 193px;
     padding-bottom: 160px;
     background-color: $accent-background;
     overflow: hidden;
+  }
 
   .hero__container {
     position: relative;
@@ -35,11 +37,13 @@
     color: $secondary-text-color;
     margin-bottom: 19px;
   }
+
   .hero__title--accent {
     font-size: 48px;
     line-height: 0.958;
     color: $main-brand-color;
   }
+
   .hero__cone {
     position: absolute;
     z-index: 2;
@@ -47,6 +51,7 @@
     transform: translateX(85px);
     right: 37%;
   }
+
   .hero__ellipse {
     width: 346px;
     height: 344px;
@@ -58,9 +63,11 @@
     border-radius: 50%;
     background: $secondary-brand-color;
   }
+
   .hero__btn-list {
     display: flex;
   }
+
   .hero__btn {
     position: relative;
     z-index: 10;
