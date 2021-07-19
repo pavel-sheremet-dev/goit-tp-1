@@ -92,8 +92,16 @@
 
 .advantages__count {
   font-family: $secondary-font;
-  @include _fw_fs_lh_ls($fw: 400, $fs: 58, $lh: 66, $ls: 0.04);
   color: $main-brand-color;
+  @include _fw_fs_lh_ls($fw: 400, $fs: 36, $lh: 41, $ls: 0.04);
+
+  @media screen and (min-width: $tablet) {
+    @include _fw_fs_lh_ls($fw: 400, $fs: 48, $lh: 55, $ls: 0.04);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include _fw_fs_lh_ls($fw: 400, $fs: 58, $lh: 66, $ls: 0.04);
+  }
 }
 
 .advantages__text {
