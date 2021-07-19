@@ -3,9 +3,11 @@
   top: 50%;
   left: 50%;
   padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   transform: translate(-50%, -50%);
-  max-width: 100%;
   max-height: 100vh;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -28,8 +30,14 @@
   color: $light-background;
 }
 
+@media screen and (min-width: $mobile) {
+  .callback {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .callback {
-    max-width: 500px;
+    width: 600px;
   }
 }
