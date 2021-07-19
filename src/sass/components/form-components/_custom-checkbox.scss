@@ -48,28 +48,6 @@
   color: $link-text-color;
 }
 
-.callback__btn {
-  align-self: center;
-  margin-bottom: 50px;
-  padding-top: 10px;
-  padding-right: 55px;
-  padding-bottom: 10px;
-  padding-left: 55px;
-  border: none;
-  border-radius: 16px;
-  font-weight: 700;
-  @include _fw_fs_lh_ls(700, 16, 30, 0.06);
-  color: $first-accent-color;
-  background-color: $first-cards-fill;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms linear;
-
-  &:hover,
-  &:focus {
-    background-color: $second-cards-fill;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .custom-checkbox {
     font-size: 14px;
