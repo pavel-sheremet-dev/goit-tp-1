@@ -7,7 +7,7 @@
 }
 
 .input-element__entry-field,
-.input-element__coment-field {
+.input-element__comment-field {
   width: 100%;
   @include _fs_lh_ls(14, 16, 0);
   border: none;
@@ -37,7 +37,7 @@
   // }
 }
 
-.input-element__coment-field {
+.input-element__comment-field {
   margin-bottom: 20px;
   resize: none;
   min-height: 120px;
@@ -79,7 +79,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .input-element__coment-field {
+  .input-element__comment-field {
     &::placeholder {
       font-size: 14px;
       line-height: 1.5;
