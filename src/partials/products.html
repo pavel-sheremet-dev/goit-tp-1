@@ -4,8 +4,9 @@
     <p class="products__subtitle">100% natural</p>
     <h2 class="products__header">Products</h2>
 
-    <ul class="products__cards list">
-      <li class="product product--ice-cone">
+    <ul id="products" class="products__cards list">
+      <li id="ice-cone" class="product product--ice-cone">
+        <a class="product__close" href="#products">&times;</a>
         <picture class="pictureset">
           <source
             srcset="
@@ -68,13 +69,18 @@
           on&nbsp;a&nbsp;rainbow. Unique flavour, unforgettable experience.
           Taste and fly away!
         </p>
-        <button type="button" class="circle-btn">
+        <button
+          type="button"
+          onclick="location.href='#ice-cone'"
+          class="circle-btn product__btn"
+        >
           <svg class="circle-btn__icon" width="11" height="10">
             <use href="./images/svg/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </li>
-      <li class="product product--ice-coffee">
+      <li id="ice-coffee" class="product product--ice-coffee">
+        <a class="product__close" href="#products">&times;</a>
         <picture class="pictureset">
           <source
             srcset="
@@ -137,13 +143,18 @@
           a&nbsp;Pfizer vaccine. Our coffee jab is invigorating in
           a&nbsp;big&nbsp;way. –273C°&nbsp;of pleasure
         </p>
-        <button type="button" class="circle-btn">
+        <button
+          type="button"
+          onclick="location.href='#ice-coffee'"
+          class="circle-btn product__btn"
+        >
           <svg class="circle-btn__icon" width="11" height="10">
             <use href="./images/svg/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
       </li>
-      <li class="product product--milkshake">
+      <li id="milkshake" class="product product--milkshake">
+        <a class="product__close" href="#products">&times;</a>
         <picture class="pictureset">
           <source
             srcset="
@@ -206,7 +217,11 @@
           milkshake then shake your body. Or&nbsp;milk your buddy (if you have
           one)
         </p>
-        <button type="button" class="circle-btn">
+        <button
+          type="button"
+          onclick="location.href='#milkshake'"
+          class="circle-btn product__btn"
+        >
           <svg class="circle-btn__icon" width="11" height="10">
             <use href="./images/svg/icons.svg#icon-arrow-right"></use>
           </svg>
