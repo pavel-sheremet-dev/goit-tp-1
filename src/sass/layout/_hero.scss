@@ -9,6 +9,7 @@
     padding-top: 193px;
     padding-bottom: 160px;
     background-color: $accent-background;
+    overflow: hidden;
 
     &::after {
       content: '';
