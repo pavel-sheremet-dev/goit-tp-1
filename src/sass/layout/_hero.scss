@@ -191,19 +191,19 @@
   }
   .hero__cone {
     bottom: -292px;
-    right: 236px/2 + 450px;
+    right: 236px/2 + 355px;
   }
   .hero__ellipse {
     width: 538px;
     height: 538px;
     bottom: -292px + 75px;
     transform: translateX(269px);
-    right: 538px/2 + 267px;
+    right: 538px/2 + 172px;
     border-radius: 50%;
   }
   .hero__girl {
     bottom: -292px;
-    right: 109px;
+    right: 14px;
   }
   .hero__milk {
     left: 20px;
@@ -247,5 +247,19 @@
     line-height: 1.5;
     color: $secondary-text-color;
     margin-bottom: 7px;
+  }
+
+  .hero__btn {
+    position: relative;
+    z-index: 10;
+    padding: 11px 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.27;
+    border-radius: 20px;
+
+    &:first-child {
+      margin-right: 8px;
+    }
   }
 }
