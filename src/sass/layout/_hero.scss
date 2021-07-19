@@ -13,11 +13,10 @@
 }
 @media screen and (min-width: 280px) {
   .hero {
-    overflow: hidden;
     padding-top: 193px;
     padding-bottom: 160px;
     background-color: $accent-background;
-  }
+    overflow: hidden;
 
   .hero__container {
     position: relative;
