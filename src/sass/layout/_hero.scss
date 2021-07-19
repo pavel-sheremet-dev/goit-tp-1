@@ -219,22 +219,16 @@
   .hero__girl {
     bottom: -56px;
     right: 14px;
-
+    transform-origin: bottom;
     animation-name: girl;
     animation-timing-function: linear;
-    animation-duration: 500ms;
-    animation-delay: 0;
+    animation-duration: 750ms;
+    animation-delay: 500ms;
     animation-iteration-count: 1;
   }
   .hero__milk {
     left: 0;
     bottom: -56px + 45px;
-
-    animation-name: milk;
-    animation-timing-function: linear;
-    animation-duration: 15000ms;
-    animation-delay: 750ms;
-    animation-iteration-count: infinite;
   }
   .hero__list {
     right: 20px;
