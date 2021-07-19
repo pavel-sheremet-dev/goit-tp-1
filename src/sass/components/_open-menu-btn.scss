@@ -1,6 +1,14 @@
 .open-menu-btn {
+  stroke: $main-brand-color;
+  background-color: transparent;
   padding: 0;
   border: none;
+  transition: stroke 250ms linear;
+
+  &:hover,
+  &:focus {
+    stroke: $first-accent-color;
+  }
 }
 
 @media screen and (min-width: $desktop) {
