@@ -42,24 +42,14 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    stroke: $second-accent-color;
     cursor: pointer;
     line-height: 0;
     transform: scale(0);
-    border: 1px solid green;
     transition: transform 250ms linear 500ms;
 
     .backdrop.is-open & {
       transform: scale(1);
-    }
-  }
-
-  .mobile-menu__close-icon {
-    fill: red;
-    transition: fill 250ms linear;
-
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
     }
   }
 
@@ -93,6 +83,8 @@
   .mobile-menu__container {
     align-items: center;
     flex-direction: row-reverse;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .mobile-menu__btn {

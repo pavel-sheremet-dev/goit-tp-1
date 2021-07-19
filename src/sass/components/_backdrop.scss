@@ -17,8 +17,8 @@
     }
 
     &.is-close {
-      transition: visibility 250ms linear 250ms, pointer-events 250ms linear 250ms,
-        opacity 250ms linear 250ms;
+      transition: visibility 250ms linear 250ms,
+        pointer-events 250ms linear 250ms, opacity 250ms linear 250ms;
       visibility: hidden;
       pointer-events: none;
       opacity: 0;
@@ -30,10 +30,9 @@
     visibility: hidden;
     pointer-events: none;
   }
+}
+// класс,  который мы будем вешать на боди, чтобы отключить скрол по странице при открытии модального окна и мобильного меню
 
-  // класс,  который мы будем вешать на боди, чтобы отключить скрол по странице при открытии модального окна и мобильного меню
-
-  .is-lock {
-    overflow: hidden;
-  }
+.is-lock {
+  overflow: hidden;
 }
