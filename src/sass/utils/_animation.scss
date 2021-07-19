@@ -28,19 +28,19 @@
 @media screen and (min-width: $tablet) {
   @keyframes ellipse {
     0% {
-      transform: translateX(173px) scale(100%);
+      transform: translateX(173px) rotate(0) scale(100%);
     }
     25% {
-      transform: translateX(173px) scale(105%);
+      transform: translateX(173px) rotate(90deg) scale(105%);
     }
     50% {
-      transform: translateX(173px) scale(95%);
+      transform: translateX(173px) rotate(180deg) scale(95%);
     }
     75% {
-      transform: translateX(173px) scale(105%);
+      transform: translateX(173px) rotate(270deg) scale(105%);
     }
     100% {
-      transform: translateX(173px) scale(100%);
+      transform: translateX(173px) rotate(360deg) scale(100%);
     }
   }
 }
@@ -48,19 +48,19 @@
 @media screen and (min-width: $desktop) {
   @keyframes ellipse {
     0% {
-      transform: translateX(269px) scale(100%);
+      transform: translateX(269px) rotate(0) scale(100%);
     }
     25% {
-      transform: translateX(269px) scale(105%);
+      transform: translateX(269px) rotate(90deg) scale(105%);
     }
     50% {
-      transform: translateX(269px) scale(95%);
+      transform: translateX(269px) rotate(180deg) scale(95%);
     }
     75% {
-      transform: translateX(269px) scale(105%);
+      transform: translateX(269px) rotate(270deg) scale(105%);
     }
     100% {
-      transform: translateX(269px) scale(100%);
+      transform: translateX(269px) rotate(360deg) scale(100%);
     }
   }
 

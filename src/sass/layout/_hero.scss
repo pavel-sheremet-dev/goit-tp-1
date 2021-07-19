@@ -54,10 +54,11 @@
     right: 37%;
     border-radius: 50%;
     background: $secondary-brand-color;
+    transform-origin: 48% 53%;
 
     animation-name: ellipse;
     animation-timing-function: linear;
-    animation-duration: 3000ms;
+    animation-duration: 8000ms;
     animation-delay: 0;
     animation-iteration-count: infinite;
   }
@@ -183,7 +184,7 @@
     align-items: center;
   }
 
-  .circle-btn__icon {
+  .circle-btn__icon--smaller {
     width: 6px;
     height: 5px;
   }
@@ -299,7 +300,7 @@
     height: 26px;
   }
 
-  .circle-btn__icon {
+  .circle-btn__icon--smaller {
     width: 7px;
     height: 6px;
   }
