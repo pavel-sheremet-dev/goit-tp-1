@@ -21,5 +21,18 @@
 <symbol id="icon-button-arrow" viewBox="0 0 16 20">
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.233 2l8.855 8-8.855 8"></path>
 </symbol>
+
+<symbol id="icon-Vector-1" viewBox="0 0 19 32">
+<path fill="none" stroke="#fff"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
+
+<symbol id="icon-Vector-1" viewBox="0 0 19 32">
+<path fill="none"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.553 12.8-11.553 12.8"></path>
+</symbol>
+
+<symbol id="icon-Vector-2" viewBox="0 0 22 32">
+<path fill="none"  style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
+
 </defs>
 </svg>
