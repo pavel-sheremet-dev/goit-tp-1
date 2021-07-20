@@ -1,31 +1,53 @@
 <section class="contacts" id="contact">
   <div class="container">
+    <picture>
+      <source
+        srcset="
+          ./images/contacts/pink-drops-desktop.webp    1x,
+          ./images/contacts/pink-drops-desktop@2x.webp 2x
+        "
+        type="image/webp"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/pink-drops-desktop.png    1x,
+          ./images/contacts/pink-drops-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <img
+        class="milk-drops"
+        src="./images/contacts/pink-drops-desktop.png"
+        alt="milk drops"
+      />
+    </picture>
     <h2 class="visually-hidden"></h2>
     <ul class="contacts-list list">
       <li class="contacts-item">
-        <p class="contacts-item__title">CAFE</p>
+        <div class="contacts-item__cafe">cafe</div>
         <div class="contacts-item__wrapper">
-          <p>Chicago</p>
-          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contacts-item__town">Chicago</p>
+          <p class="contacts-item__description">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
         </div>
-        <!-- add pseudo evelent before -->
         <div class="contacts-item__wrapper">
           <p class="contacts-item__day">Monday - Friday</p>
           <p class="contacts-item__time">06:00 AM - 10:00 PM</p>
           <p class="contacts-item__day">Saturday - Sunday</p>
           <p class="contacts-item__time">08:00 AM - 16:00 PM</p>
         </div>
-        <!-- add pseudo evelent before -->
         <address class="address">
-          <ul class="adress-list list">
-            <li class="contacts-item">
-              <a class="contacts-item__phone link" href="tel:+61(0)383766284"
+          <ul class="address-list list">
+            <li class="address-item">
+              <a class="address-item__phone link" href="tel:+61(0)383766284"
                 >+61(0) 383 766 284</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="address-item">
               <a
-                class="contacts-item__email link"
+                class="address-item__email link"
                 href="mailto:noreply@envato.com"
                 >noreply@envato.com</a
               >
@@ -34,29 +56,29 @@
         </address>
       </li>
       <li class="contacts-item">
-        <p class="contacts-item__title">FOODTRUCK</p>
+        <div class="contacts-item__foodtruck">foodtruck</div>
         <div class="contacts-item__wrapper">
-          <p>Los Angeles</p>
-          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contacts-item__town">Chicago</p>
+          <p class="contacts-item__description">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
         </div>
-        <!-- add pseudo evelent before -->
         <div class="contacts-item__wrapper">
           <p class="contacts-item__day">Monday - Friday</p>
           <p class="contacts-item__time">06:00 AM - 10:00 PM</p>
           <p class="contacts-item__day">Saturday - Sunday</p>
           <p class="contacts-item__time">08:00 AM - 16:00 PM</p>
         </div>
-        <!-- add pseudo evelent before -->
         <address class="address">
-          <ul class="adress-list list">
-            <li class="contacts-item">
-              <a class="contacts-item__phone link" href="tel:+61(0)383766284"
+          <ul class="address-list list">
+            <li class="address-item">
+              <a class="address-item__phone link" href="tel:+61(0)383766284"
                 >+61(0) 383 766 284</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="address-item">
               <a
-                class="contacts-item__email link"
+                class="address-item__email link"
                 href="mailto:noreply@envato.com"
                 >noreply@envato.com</a
               >
@@ -65,29 +87,29 @@
         </address>
       </li>
       <li class="contacts-item">
-        <p class="contacts-item__title">CAFE</p>
+        <div class="contacts-item__cafe">cafe</div>
         <div class="contacts-item__wrapper">
-          <p>New York</p>
-          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contacts-item__town">Chicago</p>
+          <p class="contacts-item__description">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
         </div>
-        <!-- add pseudo evelent before -->
         <div class="contacts-item__wrapper">
           <p class="contacts-item__day">Monday - Friday</p>
           <p class="contacts-item__time">06:00 AM - 10:00 PM</p>
           <p class="contacts-item__day">Saturday - Sunday</p>
           <p class="contacts-item__time">08:00 AM - 16:00 PM</p>
         </div>
-        <!-- add pseudo evelent before -->
         <address class="address">
-          <ul class="adress-list list">
-            <li class="contacts-item">
-              <a class="contacts-item__phone link" href="tel:+61(0)383766284"
+          <ul class="address-list list">
+            <li class="address-item">
+              <a class="address-item__phone link" href="tel:+61(0)383766284"
                 >+61(0) 383 766 284</a
               >
             </li>
-            <li class="contacts-item">
+            <li class="address-item">
               <a
-                class="contacts-item__email link"
+                class="address-item__email link"
                 href="mailto:noreply@envato.com"
                 >noreply@envato.com</a
               >
@@ -96,11 +118,19 @@
         </address>
       </li>
     </ul>
-    <button class="contacts-button__location" type="button">
-      Our Locations >
-    </button>
-    <button class="contacts-button__franchaise" type="button">
-      Franchise >
-    </button>
+    <div class="contacts-button-wrapper">
+      <button class="contacts-button__location btn" type="button">
+        Our Locations
+        <svg class="icon-arrow-location">
+          <use href="./images/svg/icons.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+      <button class="contacts-button__franchaise btn" type="button">
+        Franchise
+        <svg class="icon-arrow-franchise">
+          <use href="./images/svg/icons.svg#icon-Vector-2"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>

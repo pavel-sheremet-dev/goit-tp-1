@@ -64,5 +64,6 @@
   &:focus {
     background-color: $button-right-arrow-fill;
     color: $secondary-text-color;
+    cursor: pointer;
   }
 }
