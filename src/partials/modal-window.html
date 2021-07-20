@@ -1,0 +1,91 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close-btn" data-modal-close menu-data-modal-close>
+      <svg class="modal__close-icon" width="14" height="14">
+        <use href="./images/svg/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="callback" name="callback-form" method="GET" autocomplete="on">
+      <b class="callback__title"
+        >Please leave your details and we'll call you back to finalize your
+        order</b
+      >
+      <label class="input-element" for="modal-name">Your name</label>
+      <div class="input-element__field-wrapper">
+        <input
+          class="input-element__entry-field"
+          name="username"
+          type="text"
+          id="modal-name"
+          minlength="2"
+          maxlength="20"
+          placeholder=" "
+          required
+        />
+        <svg class="input-element__icon">
+          <use href="./images/svg/icons.svg#icon-person"></use>
+        </svg>
+      </div>
+      <label class="input-element" for="modal-tel">Phone</label>
+      <div class="input-element__field-wrapper">
+        <input
+          class="input-element__entry-field"
+          name="user-phone"
+          type="tel"
+          id="modal-tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          placeholder=" "
+          title="093-111-22-33"
+          required
+        />
+        <svg class="input-element__icon">
+          <use href="./images/svg/icons.svg#icon-phone"></use>
+        </svg>
+      </div>
+      <label class="input-element" for="modal-email">E-mail</label>
+      <div class="input-element__field-wrapper">
+        <input
+          class="input-element__entry-field"
+          name="user-email"
+          type="email"
+          id="modal-email"
+          placeholder=" "
+          required
+        />
+        <svg class="input-element__icon">
+          <use href="./images/svg/icons.svg#icon-email"></use>
+        </svg>
+      </div>
+      <label class="input-element" for="modal-comment">Order</label>
+      <textarea
+        class="input-element__comment-field"
+        name="user-message"
+        id="modal-comment"
+        placeholder="Describe your order"
+      ></textarea>
+      <label class="custom-checkbox">
+        <input
+          class="custom-checkbox__input visually-hidden"
+          type="checkbox"
+          name="agreement-option"
+          value="agree"
+          required
+        />
+        <svg class="custom-checkbox__icon">
+          <use href="./images/svg/icons.svg#icon-checked"></use>
+        </svg>
+        <span>
+          I accept
+          <a
+            class="custom-checkbox__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Terms and Conditions</a
+          >
+        </span>
+      </label>
+      <button class="callback__btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

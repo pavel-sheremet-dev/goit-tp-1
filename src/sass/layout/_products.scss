@@ -7,21 +7,24 @@
     font-family: $secondary-font;
     color: $secondary-brand-color;
     text-transform: uppercase;
-    @include _fs_lh_ls(18, 20.6);
+    @include _fw_fs_lh_ls(400, 18, 20.6);
   }
   &__header {
     font-family: $secondary-font;
     color: $main-brand-color;
     text-transform: uppercase;
-    @include _fs_lh_ls(34, 39, 0.04);
+    @include _fw_fs_lh_ls(400, 34, 39, 0.04);
   }
   &__cards {
     margin-bottom: 98px;
   }
 }
 .product {
+  $product: &;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: calc((252 * (100vw - 70px) / 249) * (113 / 249) + 31px);
   margin-bottom: 17px;
   padding: 0 40px 40px;
@@ -43,7 +46,7 @@
     position: absolute;
   }
   &__caption {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     padding-top: calc(
       (252 * (100vw - 70px) / 249) * ((252 - 113) / 249) + 22px
     );
@@ -54,7 +57,7 @@
     &::after {
       content: '...';
       display: block;
-      margin-top: 16px;
+      margin-top: 12px;
       font-size: 27px;
       letter-spacing: 0.08em;
     }
@@ -64,5 +67,156 @@
     font-family: $main-font;
     color: $secondary-text-color;
     @include _fw_fs_lh_ls(700, 14, 22, 0.04);
+  }
+  &__close,
+  &__full-description {
+    display: none;
+  }
+  &:target {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    z-index: 100;
+    margin: 0;
+    border-radius: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: repeating-radial-gradient(
+      circle,
+      #ffffff09,
+      #ffffff09 30px,
+      #00000009 32px,
+      #00000009 31px
+    );
+    transition: 250ms ease-in;
+
+    #{$product}__image {
+      width: 300px;
+      transform: initial;
+      position: relative;
+      margin: initial;
+    }
+    #{$product}__close {
+      display: block;
+      position: fixed;
+      top: 23px;
+      right: 50px;
+      padding: 0;
+      border: none;
+      stroke: $secondary-text-color;
+      background-color: transparent;
+      z-index: 110;
+      cursor: pointer;
+
+      &:hover {
+        color: #d41443;
+      }
+    }
+    #{$product}__caption {
+      padding-top: 40px;
+      font-size: 38px;
+    }
+    #{$product}__description {
+      width: 80vw;
+    }
+    #{$product}__full-description {
+      width: 80vw;
+      display: block;
+      @include _fs_lh_ls(14, 29.8);
+      color: $secondary-text-color;
+      opacity: 0.8;
+    }
+    #{$product}__btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .product {
+    margin-top: 219px;
+
+    &__image {
+      width: 410px;
+      transform: translateY(-188px);
+    }
+    &__caption {
+      padding-top: 254px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .products {
+    &__subtitle {
+      @include _fs_lh_ls(26, 29.8);
+    }
+    &__header {
+      @include _fs_lh_ls(48, 55, 0.04);
+      margin-bottom: 150px;
+    }
+    &__cards {
+      display: flex;
+      margin-bottom: 112px;
+      padding: 0 4px;
+    }
+  }
+  .product {
+    margin: 0 10px;
+    padding: 0 10px 40px;
+
+    &__image {
+      width: 100%;
+      margin-left: -8px;
+      transform: translateY(-102px);
+    }
+    &__caption {
+      padding-top: 152px;
+      margin-bottom: 30px;
+    }
+    &__description {
+      @include _fw_fs_lh_ls(700, 14, 24.6, 0.04);
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .products {
+    &__subtitle {
+      @include _fs_lh_ls(30, 34.35, 0.04);
+    }
+    &__header {
+      @include _fs_lh_ls(58, 66.4, 0.06);
+      margin-bottom: 259px;
+    }
+    &__cards {
+      margin-bottom: 119px;
+      padding: 0 6px;
+    }
+  }
+  .product {
+    margin: 0 15px;
+    padding: 0 44px 50px;
+
+    &__image {
+      margin-left: -44px;
+      transform: translateY(-210px);
+    }
+    &__caption {
+      padding-top: 163px;
+      margin-bottom: 32px;
+
+      &::after {
+        margin-top: 12px;
+      }
+    }
+    &__description {
+      @include _fs_lh_ls(16, 28.2, 0.04);
+      margin-bottom: 62px;
+    }
   }
 }

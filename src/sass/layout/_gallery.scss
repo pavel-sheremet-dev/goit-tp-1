@@ -1,0 +1,57 @@
+.gallery__container {
+  max-width: 480px;
+  min-height: 125px;
+  margin-top: -48px;
+
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/gallery/opacity/gallery-mob.png');
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/gallery/opacity/gallery-mob@2x.png');
+  }
+}
+
+.gallery {
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: $tablet) {
+  .gallery {
+    padding-bottom: 60px;
+  }
+
+  .gallery__container {
+    max-width: 786px;
+    min-height: 265px;
+    margin-top: -105px;
+    background-image: url('../images/gallery/opacity/gallery-tablet.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/gallery/opacity/gallery-tablet@2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .gallery__container {
+    max-width: 1280px;
+    min-height: 430px;
+    margin-top: -171px;
+    background-image: url('../images/gallery/opacity/gallery-desktop.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/gallery/opacity/gallery-desktop@2x.png');
+    }
+  }
+}

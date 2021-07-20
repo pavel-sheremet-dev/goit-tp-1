@@ -1,0 +1,62 @@
+.callback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(-50%, -50%);
+  max-height: calc(100vh - 100px);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &::after {
+    content: '...';
+    @include _fs_lh_ls(20, 20, 0.2);
+    color: $first-accent-color;
+    display: block;
+  }
+}
+
+.callback__title {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  @include _fs_lh_ls(20, 30, 0);
+  letter-spacing: 0.06em;
+  color: $main-brand-color;
+}
+
+.callback__btn {
+  align-self: center;
+  margin-bottom: 50px;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 25px;
+  @include _fw_fs_lh_ls(500, 16, 26, 0.05);
+  color: $secondary-text-color;
+  background-color: $main-brand-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $first-accent-color;
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .callback {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .callback {
+    width: 600px;
+  }
+}
