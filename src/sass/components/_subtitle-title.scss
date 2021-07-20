@@ -1,0 +1,32 @@
+.subtitle {
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  color: $secondary-brand-color;
+  text-align: center;
+  text-transform: uppercase;
+  @include _fw_fs_lh_ls(400, 18, 20.6);
+}
+.title {
+  font-family: $secondary-font;
+  color: $main-brand-color;
+  text-align: center;
+  text-transform: uppercase;
+  @include _fw_fs_lh_ls(400, 34, 39, 0.04);
+}
+
+@media screen and (min-width: $tablet) {
+  .subtitle {
+    @include _fs_lh_ls(26, 29.8);
+  }
+  .title {
+    @include _fs_lh_ls(48, 55, 0.04);
+  }
+}
+@media screen and (min-width: $desktop) {
+  .subtitle {
+    @include _fs_lh_ls(30, 34.35, 0.04);
+  }
+  .title {
+    @include _fs_lh_ls(58, 66.4, 0.06);
+  }
+}
