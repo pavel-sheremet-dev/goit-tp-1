@@ -59,6 +59,7 @@
   margin-top: auto;
   background-color: $secondary-text-color;
   color: $button-right-arrow-fill;
+  transition: color 125ms linear, background-color 250ms linear;
 
   &:hover,
   &:focus {
