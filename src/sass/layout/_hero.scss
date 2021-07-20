@@ -66,6 +66,11 @@
   .hero__btn-list {
     display: flex;
   }
+  .hero__btn-list-item {
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
 
   .hero__btn {
     position: relative;
@@ -75,10 +80,6 @@
     font-size: 8px;
     line-height: 1.25;
     border-radius: 20px;
-
-    &:first-child {
-      margin-right: 8px;
-    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -267,7 +268,11 @@
   .hero__btn-list {
     margin-bottom: 112px;
   }
-
+  .hero__btn-list-item {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
   .hero__product-descr {
     padding-left: 180px;
   }
@@ -289,15 +294,12 @@
     font-size: 14px;
     line-height: 1.27;
     border-radius: 20px;
-
-    &:first-child {
-      margin-right: 8px;
-    }
   }
 
   .hero__circle-btn {
     width: 26px;
     height: 26px;
+    padding: 0;
   }
 
   .circle-btn__icon--smaller {
