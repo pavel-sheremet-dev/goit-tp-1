@@ -1,17 +1,12 @@
 .contacts {
   padding-top: 0px;
+  padding-bottom: 56px;
   background-color: $light-background;
-
-  @media screen and (min-width: 480px), (min-width: 320px) {
-    margin-top: 170px;
-  }
-
-  @media screen and (min-width: 480px) {
-    margin-top: 170px;
-  }
+  margin-top: 170px;
 
   @media screen and (min-width: 768px) {
     margin-top: 197px;
+    padding-bottom: 82px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 234px;
