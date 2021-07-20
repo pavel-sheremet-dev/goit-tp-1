@@ -4,6 +4,18 @@
   background-color: $light-background;
   margin-top: 170px;
 
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/contacts/pink-drops-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/contacts/pink-drops-desktop@2x.png');
+    }
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 197px;
     padding-bottom: 82px;
