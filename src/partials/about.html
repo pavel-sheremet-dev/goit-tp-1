@@ -52,11 +52,7 @@
           media="(max-width: 767px)"
           type="image/png"
         />
-        <img
-          class="about__image"
-          src="./images/about/cow-desktop.png "
-          alt="Cow"
-        />
+        <img class="about__image" src="#" alt="Cow" loading="lazy" />
       </picture>
       <div class="about__text-container">
         <p class="about__main-text">
@@ -77,7 +73,11 @@
           cream.
         </p>
 
-        <button class="btn btn_theme_white about__btn" type="button">
+        <button
+          class="btn btn_theme_white about__btn"
+          aria-label="Read-more-button"
+          type="button"
+        >
           Read more
           <svg
             class="
