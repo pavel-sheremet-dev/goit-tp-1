@@ -7,10 +7,10 @@
   border-radius: 4px;
   background-image: repeating-radial-gradient(
     circle,
-    $main-brand-color,
-    $main-brand-color 30px,
-    $first-accent-color 30px,
-    $first-accent-color 60px
+    $secondary-brand-color,
+    $secondary-brand-color 30px,
+    $accent-background 30px,
+    $accent-background 60px
   );
   transform: translateY(0);
   transition: transform 250ms linear;
@@ -33,4 +33,8 @@
   stroke: $second-accent-color;
   cursor: pointer;
   line-height: 0;
+}
+
+.modal__close-icon {
+  stroke: $first-accent-color;
 }
