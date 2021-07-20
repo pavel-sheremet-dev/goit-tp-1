@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $light-background;
+  color: $first-accent-color;
   margin-bottom: 30px;
-  @include _fs_lh_ls(12, 14, 0.03);
+  @include _fs_lh_ls(14, 16, 0.03);
   // alternate checkbox focus
   // &:focus-within {
   //   outline: 1px solid var(--accent-color);
@@ -17,14 +17,14 @@
   border-radius: 2px;
   width: 15px;
   height: 15px;
-  border: 2px solid $second-cards-fill;
+  border: 2px solid $first-accent-color;
   cursor: pointer;
   background-size: contain;
   fill: none;
   transition: transform 250ms linear, fill 250ms linear;
 
   .custom-checkbox__input:checked + & {
-    fill: $first-accent-color;
+    fill: $second-accent-color;
   }
   .custom-checkbox__input:not(:checked):focus + & {
     outline: 1px solid $light-background;
@@ -38,7 +38,7 @@
 
   .custom-checkbox__input:checked + & {
     border: none;
-    background-color: $second-cards-fill;
+    background-color: $first-accent-color;
     transform: rotate(360deg);
   }
 }
