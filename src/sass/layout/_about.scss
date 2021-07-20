@@ -169,29 +169,21 @@
   margin-top: 20px;
 }
 
-.about__button {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-
+.about__text-container .about__button {
   margin-top: 26px;
   padding-left: 36px;
   padding-right: 36px;
   padding-top: 17px;
   padding-bottom: 17px;
-
   border: none;
   border-radius: 22px;
   width: 176px;
   height: 44px;
-
-  background-color: $secondary-text-color;
-  color: $main-brand-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.286;
 }
 
 .about__icon {
-  margin-left: 19px;
+  // margin-left: 19px;
 }
