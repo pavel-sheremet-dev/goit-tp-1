@@ -3,26 +3,34 @@
   padding-top: 113px;
   position: relative;
 }
-
-.footer-logo {
-  font-family: $secondary-font;
-  font-size: 18px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  color: $secondary-brand-color;
+.footer__subtitle {
   max-width: 232px;
-  margin-bottom: 15px;
+  text-align: left;
+}
+.footer__title {
+  max-width: 200px;
+  text-align: left;
 }
 
-.footer-logo--accent {
-  font-family: $secondary-font;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $main-brand-color;
-  max-width: 200px;
-}
+// .footer-logo {
+//   font-family: $secondary-font;
+//   font-size: 18px;
+//   line-height: 1.17;
+//   text-transform: uppercase;
+//   color: $secondary-brand-color;
+//   max-width: 232px;
+//   margin-bottom: 15px;
+// }
+
+// .footer-logo--accent {
+//   font-family: $secondary-font;
+//   font-size: 34px;
+//   line-height: 1.15;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: $main-brand-color;
+//   max-width: 200px;
+// }
 
 .social-media {
   display: flex;
@@ -105,6 +113,9 @@
   .footer-wrapper {
     position: absolute;
   }
+  .footer__subtitle {
+    max-width: 340px;
+  }
   .footer-phone {
     margin-bottom: 204px;
   }
@@ -122,9 +133,9 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .footer-logo,
-  .footer-logo--accent {
-    max-width: 474px;
+  .footer__subtitle,
+  .footer__title {
+    max-width: 480px;
   }
   .footer-phone {
     margin-bottom: 107px;

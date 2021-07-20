@@ -2,19 +2,19 @@
   text-align: center;
   padding-top: 121px;
 
-  &__subtitle {
-    margin-bottom: 15px;
-    font-family: $secondary-font;
-    color: $secondary-brand-color;
-    text-transform: uppercase;
-    @include _fw_fs_lh_ls(400, 18, 20.6);
-  }
-  &__header {
-    font-family: $secondary-font;
-    color: $main-brand-color;
-    text-transform: uppercase;
-    @include _fw_fs_lh_ls(400, 34, 39, 0.04);
-  }
+  // &__subtitle {
+  //   margin-bottom: 15px;
+  //   font-family: $secondary-font;
+  //   color: $secondary-brand-color;
+  //   text-transform: uppercase;
+  //   @include _fw_fs_lh_ls(400, 18, 20.6);
+  // }
+  // &__header {
+  //   font-family: $secondary-font;
+  //   color: $main-brand-color;
+  //   text-transform: uppercase;
+  //   @include _fw_fs_lh_ls(400, 34, 39, 0.04);
+  // }
   &__cards {
     margin-bottom: 98px;
   }
@@ -151,11 +151,11 @@
 
 @media screen and (min-width: $tablet) {
   .products {
-    &__subtitle {
-      @include _fs_lh_ls(26, 29.8);
-    }
-    &__header {
-      @include _fs_lh_ls(48, 55, 0.04);
+    // &__subtitle {
+    //   @include _fs_lh_ls(26, 29.8);
+    // }
+    &__title {
+      // @include _fs_lh_ls(48, 55, 0.04);
       margin-bottom: 150px;
     }
     &__cards {
@@ -186,11 +186,11 @@
 
 @media screen and (min-width: $desktop) {
   .products {
-    &__subtitle {
-      @include _fs_lh_ls(30, 34.35, 0.04);
-    }
-    &__header {
-      @include _fs_lh_ls(58, 66.4, 0.06);
+    // &__subtitle {
+    //   @include _fs_lh_ls(30, 34.35, 0.04);
+    // }
+    &__title {
+      // @include _fs_lh_ls(58, 66.4, 0.06);
       margin-bottom: 259px;
     }
     &__cards {
