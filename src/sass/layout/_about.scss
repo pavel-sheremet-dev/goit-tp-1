@@ -39,49 +39,23 @@
   }
 
   &__subtitle {
-    // margin-bottom: 15px;
-
-    // font-family: $secondary-font;
-    // color: $secondary-brand-color;
-    // font-size: 18px;
-    // line-height: 1.167;
-    // text-transform: uppercase;
-    // text-align: center;
-
     @media screen and (min-width: 768px) {
       margin-bottom: 16px;
-      // font-size: 26px;
-      // line-height: 1.154;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 15px;
-      // font-size: 30px;
-      // line-height: 1.133;
     }
   }
 
   &__title {
     margin-bottom: 26px;
 
-    // font-family: $secondary-font;
-    // color: $main-brand-color;
-    // font-size: 34px;
-    // line-height: 1.147;
-    // text-transform: uppercase;
-    // letter-spacing: 0.04em;
-    // text-align: center;
-
     @media screen and (min-width: 768px) {
       margin-bottom: 50px;
-      // font-size: 48px;
-      // line-height: 1.146;
     }
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 55px;
-      // font-size: 58px;
-      // line-height: 1.138;
-      // letter-spacing: 0.06em;
     }
   }
 }
