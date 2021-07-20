@@ -37,7 +37,7 @@
   padding: 10px 55px;
   border: none;
   border-radius: 25px;
-  @include _fw_fs_lh_ls(400, 20, 30, 0.05);
+  @include _fw_fs_lh_ls(500, 16, 26, 0.05);
   color: $secondary-text-color;
   background-color: $main-brand-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
