@@ -33,6 +33,16 @@
     #e1e1e1 29px,
     transparent 30px
   );
+
+  @media screen and (min-width: $tablet) {
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 28px,
+      #e1e1e1 28px,
+      transparent 29px
+    );
+  }
 }
 
 .review-card__customer {
