@@ -32,6 +32,7 @@
   &:not(:last-child) {
     margin-right: 28px;
   }
+  transition: background-color 250ms linear;
   &:hover,
   &:focus {
     background-color: $main-brand-color;

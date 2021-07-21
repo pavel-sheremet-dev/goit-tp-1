@@ -17,7 +17,7 @@
       class="open-menu-btn header__open-menu-btn"
       type="button"
       data-menu-button
-      aria-label="Mobile menu open button"
+      aria-label="mobile menu open button"
       aria-expanded="false"
       aria-controls="mobile-menu-container"
     >
@@ -29,6 +29,9 @@
       class="btn btn_theme_white header__btn"
       type="button"
       data-modal-open
+      aria-label="purchase form open button"
+      aria-expanded="false"
+      aria-controls="modal-window-container"
     >
       Buy now
       <svg class="btn__icon btn__icon_theme_white" width="8" height="10">
@@ -42,7 +45,12 @@
     >
       <div class="mobile-menu" id="mobile-menu-container">
         <div class="mobile-menu__container">
-          <button class="mobile-menu__close-btn" type="button" data-menu-close>
+          <button
+            class="mobile-menu__close-btn"
+            type="button"
+            data-menu-close
+            aria-label="close button"
+          >
             <svg class="mobile-menu__close-icon" width="14" height="14">
               <use href="./images/svg/icons.svg#icon-close"></use>
             </svg>
@@ -50,7 +58,10 @@
           <button
             class="btn btn_theme_white mobile-menu__btn"
             type="button"
-            menu-data-modal-open
+            data-menu-modal-open
+            aria-label="purchase form open button"
+            aria-expanded="false"
+            aria-controls="modal-window-container"
           >
             Buy now
             <svg class="btn__icon btn__icon_theme_white" width="8" height="10">
@@ -62,15 +73,15 @@
               <li class="navigation__item">
                 <a
                   href="#home"
-                  class="navigation__link link navigation__link_accent"
+                  class="navigation__link navigation__link_1 link"
                   data-enable-accent
                   >Home</a
                 >
               </li>
               <li class="navigation__item">
                 <a
-                  href="#footer"
-                  class="navigation__link link"
+                  href="#about"
+                  class="navigation__link navigation__link_2 link"
                   data-enable-accent
                   >About us</a
                 >
@@ -78,7 +89,7 @@
               <li class="navigation__item">
                 <a
                   href="#about"
-                  class="navigation__link link"
+                  class="navigation__link navigation__link_2 link"
                   data-enable-accent
                   >How it’s made?</a
                 >
@@ -86,7 +97,7 @@
               <li class="navigation__item">
                 <a
                   href="#products"
-                  class="navigation__link link"
+                  class="navigation__link navigation__link_3 link"
                   data-enable-accent
                   >Our products</a
                 >
@@ -94,7 +105,7 @@
               <li class="navigation__item">
                 <a
                   href="#contact"
-                  class="navigation__link link"
+                  class="navigation__link navigation__link_4 link"
                   data-enable-accent
                   >Contact</a
                 >
@@ -103,6 +114,9 @@
           </nav>
         </div>
       </div>
+    </div>
+    <div id="stop" class="scrollTop">
+      <span><a class="link" href="#">Top</a></span>
     </div>
   </div>
 </header>
