@@ -18,9 +18,10 @@
 
 .review-card__review {
   position: relative;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
+  letter-spacing: 0.04em;
   text-align: center;
   color: $main-text-color;
   max-width: 157px;
@@ -97,6 +98,8 @@
     max-width: 620px;
   }
   .review-card__review {
+    font-size: 14px;
+    line-height: 2.16;
     max-width: 460px;
   }
 }
@@ -107,5 +110,7 @@
   }
   .review-card__review {
     max-width: 750px;
+    font-size: 16px;
+    line-height: 1.86;
   }
 }
