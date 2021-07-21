@@ -240,7 +240,7 @@
   }
 }
 
-.contacts__btn {
+.contacts__btn:not(:last-child) {
   padding-right: 11px;
   padding-left: 21px;
   margin-bottom: 10px;
