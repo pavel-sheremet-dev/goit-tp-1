@@ -1,17 +1,31 @@
 (() => {
-  const refs = {
-    openMenuModalBtn: document.querySelector('[menu-data-modal-open]'),
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+  const MenuModalBtnRef = document.querySelector("[data-menu-modal-open]");
+  const ModalBtnRef = document.querySelector("[data-modal-open]");
+  const closeBtnRef = document.querySelector("[data-modal-close]");
+  const modalRef = document.querySelector('[data-modal]');
 
-  refs.openMenuModalBtn.addEventListener('click', toggleModal);
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  MenuModalBtnRef.addEventListener("click", () => {
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    MenuModalBtnRef.setAttribute("aria-expanded", "true");
+
+    modalRef.classList.toggle('is-hidden');
     document.body.classList.toggle('is-lock');
-  }
+  });
+
+  ModalBtnRef.addEventListener("click", () => {
+
+    ModalBtnRef.setAttribute("aria-expanded", "true");
+
+    modalRef.classList.toggle('is-hidden');
+    document.body.classList.toggle('is-lock');
+  });
+
+  closeBtnRef.addEventListener("click", () => {
+    MenuModalBtnRef.setAttribute("aria-expanded", "false");
+    ModalBtnRef.setAttribute("aria-expanded", "false");
+
+    modalRef.classList.toggle('is-hidden');
+    document.body.classList.toggle('is-lock');
+  });
+
 })();

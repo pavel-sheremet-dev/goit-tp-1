@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $first-accent-color;
+  color: $main-brand-color;
   margin-bottom: 30px;
   @include _fs_lh_ls(14, 16, 0.03);
   // alternate checkbox focus
@@ -17,7 +17,7 @@
   border-radius: 2px;
   width: 15px;
   height: 15px;
-  border: 2px solid $first-accent-color;
+  border: 2px solid $main-brand-color;
   cursor: pointer;
   background-size: contain;
   fill: none;
@@ -27,13 +27,13 @@
     fill: $second-accent-color;
   }
   .custom-checkbox__input:not(:checked):focus + & {
-    outline: 1px solid $light-background;
-    outline-offset: 2px;
+    outline: 1px solid $secondary-text-color;
+    outline-offset: 4px;
   }
 
   .custom-checkbox__input:focus + & {
-    outline: 1px solid $light-background;
-    outline-offset: 2px;
+    outline: 1px solid $secondary-text-color;
+    outline-offset: 4px;
   }
 
   .custom-checkbox__input:checked + & {
@@ -46,6 +46,11 @@
 .custom-checkbox__link {
   display: inline-block;
   color: $link-text-color;
+
+  &:focus {
+    outline: 1px solid $secondary-text-color;
+    outline-offset: 4px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -1,0 +1,43 @@
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 9px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: transparent;
+  background-image: url(../images/svg/home-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  color: $home-btn-fill;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 20px;
+  height: 0;
+  margin-top: 0;
+  color: $home-btn-fill;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 20px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 25px;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 25px;
+}

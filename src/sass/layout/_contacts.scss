@@ -2,7 +2,6 @@
   padding-top: 0px;
   padding-bottom: 56px;
   background-color: $light-background;
-  margin-top: 170px;
 
   @media screen and (min-width: 1200px) {
     background-image: url('../images/contacts/pink-drops-desktop.png');
@@ -17,11 +16,9 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: 197px;
     padding-bottom: 82px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 234px;
   }
 }
 
@@ -36,7 +33,7 @@
     // margin-top: -20px;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: -31px;
+    margin-left: -30px;
   }
 }
 

@@ -1,18 +1,26 @@
 (() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-button]'),
-    mobileMenu: document.querySelector('[data-menu]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    backdrop: document.querySelector('[data-backdrop]'),
-  };
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
+  const closeBtnRef = document.querySelector("[data-menu-close]");
+  const backdropRef = document.querySelector('[data-backdrop]');
 
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
+  menuBtnRef.addEventListener("click", () => {
 
-  function toggleModal() {
-    refs.mobileMenu.classList.toggle('is-open');
-    refs.mobileMenu.classList.toggle('is-close');
-    refs.backdrop.classList.toggle('is-hidden');
+    menuBtnRef.setAttribute("aria-expanded", "true");
+
+    mobileMenuRef.classList.toggle("is-open");
+    backdropRef.classList.toggle("is-hidden");
+    backdropRef.classList.toggle("is-close");
     document.body.classList.toggle('is-lock');
-  }
+  });
+
+  closeBtnRef.addEventListener("click", () => {
+    menuBtnRef.setAttribute("aria-expanded", "false");
+
+    mobileMenuRef.classList.toggle("is-open");
+    backdropRef.classList.toggle("is-hidden");
+    backdropRef.classList.toggle("is-close");
+    document.body.classList.toggle('is-lock');
+  });
+
 })();

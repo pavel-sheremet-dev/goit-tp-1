@@ -1,5 +1,14 @@
 .customer-reviews {
   padding-top: 80px;
+  padding-bottom: 166px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 244px - 51px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 281px - 51px;
+  }
 }
 
 .review-slider {
@@ -33,6 +42,18 @@
 }
 .review-card__item {
   position: relative;
+  padding-bottom: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &.swiper-slide-active {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 51px;
+  }
 }
 .review-card__img {
   margin: 0 auto;
@@ -87,19 +108,4 @@
   .review-card__review {
     max-width: 750px;
   }
-}
-
-.swiper-container {
-  width: 600px;
-  height: 600px;
-  margin-bottom: 30px;
-  padding-top: 80px;
-  @media screen and (min-width: $tablet) {
-    height: 450px;
-  }
-}
-
-.swiper-pagination-bullet-active {
-  background: #d31342;
-  margin-top: 30px;
 }
